@@ -20,5 +20,6 @@ def get_bip_post():
 
     for i in result.json():
         if datetime.datetime.strptime(i['created_at'], '%Y-%m-%dT%H:%M:%S.%fZ').date() == datetime.date.today():
+            ...
         
 get_bip_post()
